@@ -6,11 +6,7 @@ export default defineConfig({
     server: {
       preset: "cloudflare_module",
       rollupConfig: {
-        external: [
-          "__STATIC_CONTENT_MANIFEST",
-          "node:async_hooks",
-          "node:stream",
-        ],
+        external: ["__STATIC_CONTENT_MANIFEST", "node:async_hooks"],
       },
       minify: false,
     },
